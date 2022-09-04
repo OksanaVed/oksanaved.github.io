@@ -18,56 +18,57 @@ function App() {
     } 
     
     
-
-
   return (
     <div className='container'>
-      <img className='oksanaJpeg' src={oksanaPhoto} alt="OksanaVed" />
-      <a id='insta' href="https://www.instagram.com/dr.oksana_ved/">Мій інстаграм</a>
-      <br />
-        <div className='firstP'>
-          <div className='clinics'>
-            <p>Очні консультації в <a className='sova' href='https://www.instagram.com/sova.klinik/'>SovaKlinik</a> та <a className='sova' href='https://www.instagram.com/lamalu_clinic/'>Лама Лу</a>,  м. Київ.</p>
+      <div className='photoInsta'>
+        <img src={oksanaPhoto} alt="OksanaVed" />
+        <a href="https://www.instagram.com/dr.oksana_ved/">Мій інстаграм</a>
+      </div>
+      
+      
+      <div className='clinics'>
+            <p>Очні консультації в <a href='https://www.instagram.com/sova.klinik/'>SovaKlinik</a> та <a href='https://www.instagram.com/lamalu_clinic/'>Лама Лу</a>,  м. Київ.</p>
             <p>Вартість очної консультації 60 хвилин 1000 грн.</p>
-            <p>Он-лайн консультація 60 хвилин 800 грн первинна,  повторна- 700 грн.</p>
-            
-          </div>
+            <p>Он-лайн консультація 60 хвилин 800 грн первинна,  повторна- 700 грн.</p>    
+      </div>
           
-        <div className='aboutMe'>
+      <div className='aboutMe'>
           <h2>Про мене</h2>
           <p>Привіт! Мене звати Оксана Ведь. Я лікар психіатр дитячий та дорослий, КПТ-консультант, навчаюсь на когнітивно-поведінкового психотерапевта дорослого та дитячого.</p>
           <p>В школі переді мною стояв вибір — психологія чи медицина, взяла приклад з батьків і пішла в медичний, але вибрала психіатрію (чи вона мене) .
           В 2015 році закінчила НМУ ім. О. О. Богомольця. В 2017 році — інтернатура з психіатрії, в 2018 р. — спеціалізація з дитячої психіатрії. З 2020 року почала працювати в приватній клініці Тесла м. Чернігів.</p>
           <p>Інтернатуру проходила на базі Чернігівської обласної психоневрологічної лікарні, там же і продовжила працювати.  Була завідуючкою дитячого психіатричного відділення з квітня 2020 по липень 2021 року.
           </p>
-          <p>Не витримала державну систему, «втекла» з псих.лікарні і приєдналася до команди однодумців SovaKlinik в м. Києві, які дотримуються доказової медицини .</p>
+          <p>Не витримала державну систему, «втекла» з псих.лікарні і приєдналася до команди однодумців SovaKlinik в м. Києві, які дотримуються доказової медицини.</p>
           <p>
           Дотримуюсь думки, що немає поганих батьків чи дітей, є ті, хто потребують допомоги та підтримки. 
           </p>
-        </div>
-        <div className='ul'>
-         
+      </div>
+      
+      <div className='buttons'>
           <ul>
             <li><a href="mailto:dr.oksana.ved@gmail.com">Написати на електронну адресу</a></li>
             <li><a href="tel:+380689110301">Запис на онлайн консультацію в SovaKlinik</a></li>
             <li><a href="tel:+380967095818">Запис на онлайн консультацію в Лама Лу</a></li>
             <li><a href="tg://resolve?domain=Ved_Oksana">Або напишіть в мій Телеграм</a></li>
           </ul>
-        </div>
-        <div className='law'>
-          <button onClick={law} style={{borderRadius:'12px', 'border':'1px solid', fontSize:'18px'}}>Що потрібно, щоб прийти на прийом до дитячого психіатра</button>
-          <ul style={{listStyleType:'none', background:'rgb(228, 228, 216)', opacity: '0.9', borderRadius: '8px'}}>
+      </div>
+      
+      <div className='law'>
+          <button onClick={law}>Що потрібно, щоб прийти на прийом до дитячого психіатра</button>
+          <ul>
           {(count%2!==0)? data.map((item,i) => React.createElement('li',{'key': i}, item)):null}
         </ul>
-        </div>
-        <div className='help'>
+      </div>
+      
+      <div className='help'>
             <h3>В яких питаннях я можу допомогти :</h3>
             <ul style={{listStyleType:'none'}}>
               <li>- Консультування батьків з приводу психічного розвитку дитини, істерик, емоційної регуляції, підвищена тривожність, страхи, енурез, аутизм, розлад дефіциту уваги та гіперактивності,  тіки, як керувати небажаною поведінкою дитини, турбота про себе в батьківстві.</li>
               <li>- Дорослі та підлітки : тривожні та депресивні стани, труднощі в регуляції злості, планування життя згідно цінностей,  розвиток стресостійкості.</li>
             </ul>
-        </div>
       </div>
+      
       <div className='footer'>
         <footer>© О.В. Ведь, 2022</footer>
       </div>

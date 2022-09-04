@@ -1,9 +1,12 @@
 #root {
   background: url(../src/fon2.png) no-repeat;
   background-size: 100% 100%;
-  font-family: 'Bellota Text', cursive;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   font-weight: bold;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 
 }
 
@@ -12,89 +15,83 @@
   margin: auto;
   height: 1300px;
 }
-.oksanaJpeg {
-  width: 150px; 
-  height: auto;
-  display: block;
+
+/* Фотка та інста під нею */
+.photoInsta {
   margin : 0 auto;
-  padding-left: 35px;
+  max-width: 100%;
 }
 
-#insta{
+.photoInsta img{
+  margin : 0 auto;
+  display: block;
+  text-align: center;
+  width: 150px;
+}
+
+.photoInsta a{
+  margin : 0 auto;
   text-decoration: none;
-  padding: 2px 1px 0 60px;
   display: block;
   text-align: center;
   margin-top: 10px;
   color:#437A16;
 }
 
-
-#insta:hover{
+.photoInsta a:hover{
   color: #344129;
 }
 
-.firstP a{
-  color:#437A16
-}
-.firstP a:hover{
-  color: #344129;
-}
-
-.firstP p {
-  color: #344129;
-  line-height: 0.5;
-}
-
-.firstP {
-  margin-left: 280px;
-}
-
-.sova{
-  text-decoration: none;
-  color: #344129;
-}
-
-h2 {
-  padding: 30px 0 0 220px;
-}
+/* Де працює і вартість */
 
 .clinics{
+  margin : 20px auto 0 auto;
+  max-width: 55%;
   background:rgb(230, 233, 237);
-  border-radius: 30px;
+  border-radius: 20px;
   opacity: 0.9;
-  width: 535px;
-  padding: 3px 0 3px 3px ;
-  text-align: inherit;
 }
 
-.aboutMe p {
-  line-height: 1.5;
+.clinics p{
+  padding: 4px;
+  margin:0;
 }
 
-/* .buttons button {
-    background-color: white;
-    color: black;
-    border: 2px solid #437A16;
-    border-radius: 8px;
-    margin-bottom: 5px;
-    display: block;
-    width: 500px;
-    
-}
-.buttons a{
+.clinics a{
   text-decoration: none;
-  font-size: larger;
+  color:#437A16;
 }
-.buttons a:hover{
-  color: #344129;
-} */
 
-.ul li {
+.clinics a:hover{
+  color: #344129;
+}
+
+/* Про Ксюшу */
+
+.aboutMe{
+  margin : 20px auto 0 auto;
+  max-width: 70%;
+}
+.aboutMe h2{
+  padding: 0;
+  margin: 35px 0 20px 0;
+  text-align: center;
+}
+/* Кнопки */
+
+.buttons{
+  max-width: 100%;
+  display: block;
+  text-align: center;
+}
+.buttons ul{
+  padding: 0;
+}
+.buttons li{
   list-style-type: none;
   margin-bottom: 5px;
 }
-.ul a{
+.buttons a{
   text-decoration: none;
   color:#437A16;
   border: 1px solid black;
@@ -104,21 +101,53 @@ h2 {
   width:100%;
   text-align: center;
 }
-ul{
-  padding-inline-start: 0;
+.buttons a:hover{
+  color: #344129;
 }
-
+/* Що потрібно для прийому по закону */
+.law{
+  max-width: 100%;
+}
+.law button{
+  max-width: 90%;
+  display: block;
+  border-radius: 12px;
+  border: 1px solid;
+  font-size: 18px;
+  color: #344129;
+}
+.law ul{
+  list-style-type: none;
+  background: rgb(228, 228, 216);
+  opacity: 0.9;
+  border-radius: 8px;
+}
+/* В яких питаннях може допомогти */
 .help{
+  max-width: 100%;
+  margin-top: 30px;
   background:rgb(230, 233, 237);
   border-radius: 8px;
   display: block;
   opacity: 0.9;
 }
-
-
+.help h3{
+  font-size: larger;
+  padding: 10px 0 0 10px;
+}
+.help li{
+  padding: 5px 0 0 10px;
+}
+/* Footer */
 .footer{
+  max-width: 100%;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 40px;
+  padding-bottom: 20px;
   font-size: 14px;
   color:#5c6356;
 }
+
+
+
+
