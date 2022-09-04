@@ -1,38 +1,124 @@
-.App {
+#root {
+  background: url(../src/fon2.png) no-repeat;
+  background-size: 100% 100%;
+  font-family: 'Bellota Text', cursive;
+  font-size: 16px;
+  font-weight: bold;
+
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  height: 1300px;
+}
+.oksanaJpeg {
+  width: 150px; 
+  height: auto;
+  display: block;
+  margin : 0 auto;
+  padding-left: 35px;
+}
+
+#insta{
+  text-decoration: none;
+  padding: 2px 1px 0 60px;
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  color:#437A16;
+}
+
+
+#insta:hover{
+  color: #344129;
+}
+
+.firstP a{
+  color:#437A16
+}
+.firstP a:hover{
+  color: #344129;
+}
+
+.firstP p {
+  color: #344129;
+  line-height: 0.5;
+}
+
+.firstP {
+  margin-left: 280px;
+}
+
+.sova{
+  text-decoration: none;
+  color: #344129;
+}
+
+h2 {
+  padding: 30px 0 0 220px;
+}
+
+.clinics{
+  background:rgb(230, 233, 237);
+  border-radius: 30px;
+  opacity: 0.9;
+  width: 535px;
+  padding: 3px 0 3px 3px ;
+  text-align: inherit;
+}
+
+.aboutMe p {
+  line-height: 1.5;
+}
+
+/* .buttons button {
+    background-color: white;
+    color: black;
+    border: 2px solid #437A16;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    display: block;
+    width: 500px;
+    
+}
+.buttons a{
+  text-decoration: none;
+  font-size: larger;
+}
+.buttons a:hover{
+  color: #344129;
+} */
+
+.ul li {
+  list-style-type: none;
+  margin-bottom: 5px;
+}
+.ul a{
+  text-decoration: none;
+  color:#437A16;
+  border: 1px solid black;
+  background:white;
+  border-radius: 8px;
+  display: block;
+  width:100%;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul{
+  padding-inline-start: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.help{
+  background:rgb(230, 233, 237);
+  border-radius: 8px;
+  display: block;
+  opacity: 0.9;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer{
+  text-align: center;
+  padding-top: 50px;
+  font-size: 14px;
+  color:#5c6356;
 }
