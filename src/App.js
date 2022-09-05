@@ -19,6 +19,7 @@ function App() {
     
     
   return (
+    <>
     <div className='container'>
       <div className='photoInsta'>
         <img src={oksanaPhoto} alt="OksanaVed" />
@@ -69,11 +70,13 @@ function App() {
             </ul>
       </div>
       
-      <div className='footer'>
-        <footer>© О.В. Ведь, 2022</footer>
-      </div>
+      
       
     </div>
+    <div className='footer'>
+        <footer>© О.В. Ведь, 2022</footer>
+    </div>
+    </>
   );
 }
 

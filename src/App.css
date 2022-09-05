@@ -7,6 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  max-height: 100%;
 
 }
 
@@ -14,6 +15,8 @@
   max-width: 1000px;
   margin: auto;
   height: 1300px;
+  max-height: 90%;
+
 }
 
 /* Фотка та інста під нею */
@@ -89,7 +92,7 @@
 }
 .buttons li{
   list-style-type: none;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 .buttons a{
   text-decoration: none;
@@ -108,14 +111,71 @@
 .law{
   max-width: 100%;
 }
-.law button{
+/* .law button{
   max-width: 90%;
   display: block;
   border-radius: 12px;
   border: 1px solid;
   font-size: 18px;
   color: #344129;
+} */
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: inherit;
+  font-family: inherit;
 }
+
+.law button{
+  font-weight:600;
+  color: #3e3c3b;
+  text-transform: uppercase;
+  padding: 5px;
+  background: #e1d6b4;
+  border: 1px solid #f1f5ed;
+  border-radius: 0.75em;
+  transition: transform 0.15s;
+  transform-style: preserve-3d;
+}
+.law button::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #f1f5ed;
+  border-radius: inherit;
+  box-shadow: 0 0 0 1px #ebeeeb, 0 0.225em 0 0 #b7b4b1;
+  transform: translate3d(0, 0.2em, -1em);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.law button:hover {
+  background: #dbc596;
+  transform: translate(0, 0.25em);
+}
+.law button:hover::before {
+  box-shadow: 0 0 0 2px #f3f6f1, 0 0.4em 0 0 #8a897b;
+  transform: translate3d(0, 0.1em, -0.1em);
+}
+.law button:active {
+  background: #e1c967;
+  transform: translate(0em, 0.45em);
+}
+.law button:active::before {
+  box-shadow: 0 0 0 2px #e1c967, 0 0 #e1c967;
+  transform: translate3d(0, 0, -1em);
+}
+
+
+
 .law ul{
   list-style-type: none;
   background: rgb(228, 228, 216);
@@ -140,13 +200,23 @@
 }
 /* Footer */
 .footer{
-  max-width: 100%;
+  /* max-width: 100%; */
   text-align: center;
-  padding-top: 10px;
   font-size: 14px;
   color:#5c6356;
+  height: 10%;
 }
 
 
+@media screen and (max-width: 875px) {
+  .container{
+    height: 1600px;
+  }
+}
 
+@media screen and (max-width: 580px) {
+  .container{
+    height: 2300px;
+  }
+}
 
