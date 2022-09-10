@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './App.css';
 import oksanaPhoto from '../src/1.ico'
+import link from './link.png';
+import insta from './insta.png'
 
 function App() {
 
@@ -19,16 +21,19 @@ function App() {
     
     
   return (
-    <>
+    <div className='both'>
     <div className='container'>
       <div className='photoInsta'>
         <img src={oksanaPhoto} alt="OksanaVed" />
-        <a href="https://www.instagram.com/dr.oksana_ved/">Мій інстаграм</a>
+        <a href="https://www.instagram.com/dr.oksana_ved/">Мій інстаграм<img src={insta} style={{height:'30px', width: '30px'}} alt='insta'/></a>
       </div>
       
       
       <div className='clinics'>
             <p>Очні консультації в <a href='https://www.instagram.com/sova.klinik/'>SovaKlinik</a> та <a href='https://www.instagram.com/lamalu_clinic/'>Лама Лу</a>,  м. Київ.</p>
+            
+            <a href="https://goo.gl/maps/4eMMFLriBsdP6piL8"><p><img src={link} style={{height:'25px'}} alt="sova"/>Адреса SovaKlinik на Google Map</p></a>
+            <a href="https://goo.gl/maps/uxGGEamHcVBVkBzJ9"><p><img src={link} style={{height:'25px'}} alt="lama"/>Адреса Лама Лу на Google Map</p></a>
             <p>Вартість очної консультації 60 хвилин 1000 грн.</p>
             <p>Он-лайн консультація 60 хвилин 800 грн первинна,  повторна- 700 грн.</p>    
       </div>
@@ -76,7 +81,8 @@ function App() {
     <div className='footer'>
         <footer>© О.В. Ведь, 2022</footer>
     </div>
-    </>
+    </div>
+    
   );
 }
 
