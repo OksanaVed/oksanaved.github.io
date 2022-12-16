@@ -3,6 +3,8 @@ import './App.css';
 import oksanaPhoto from '../src/1.ico'
 import link from './link.png';
 import insta from './insta.png'
+import {BrowserRouter as Router, Routes, Route} from  "react-router-dom";
+
 
 function App() {
 
@@ -30,12 +32,11 @@ function App() {
       
       
       <div className='clinics'>
-            <p>Очні консультації в <a href='https://www.instagram.com/sova.klinik/'>SovaKlinik</a> та <a href='https://www.instagram.com/lamalu_clinic/'>Лама Лу</a>,  м. Київ.</p>
+            <p>Очні консультації в <a href='https://k-s.org.ua/kyiv/'>Коло сім'ї</a>,  м. Київ.</p>
             
-            <a href="https://goo.gl/maps/4eMMFLriBsdP6piL8"><p><img src={link} style={{height:'25px'}} alt="sova"/>Адреса SovaKlinik на Google Map</p></a>
-            <a href="https://goo.gl/maps/uxGGEamHcVBVkBzJ9"><p><img src={link} style={{height:'25px'}} alt="lama"/>Адреса Лама Лу на Google Map</p></a>
-            <p>Вартість очної консультації 60 хвилин 1000 грн.</p>
-            <p>Он-лайн консультація 60 хвилин 800 грн первинна,  повторна- 700 грн.</p>    
+            <a href="https://maps.app.goo.gl/i4jJJsnBtwYyDWPN9?g_st=it"><p><img src={link} style={{height:'25px'}} alt="kolo"/>Адреса Коло сім'ї на Google Map</p></a>
+            <p>Вартість очної та онлайн консультацій 50 хвилин 900 грн.</p>
+            <p>Зараз консультую тільки дітей і підлітків</p>
       </div>
           
       <div className='aboutMe'>
@@ -45,18 +46,16 @@ function App() {
           В 2015 році закінчила НМУ ім. О. О. Богомольця. В 2017 році — інтернатура з психіатрії, в 2018 р. — спеціалізація з дитячої психіатрії. З 2020 року почала працювати в приватній клініці Тесла м. Чернігів.</p>
           <p>Інтернатуру проходила на базі Чернігівської обласної психоневрологічної лікарні, там же і продовжила працювати.  Була завідуючкою дитячого психіатричного відділення з квітня 2020 по липень 2021 року.
           </p>
-          <p>Не витримала державну систему, «втекла» з псих.лікарні і приєдналася до команди однодумців SovaKlinik в м. Києві, які дотримуються доказової медицини.</p>
+          <p>Не витримала державну систему, «втекла» з псих.лікарні і приєдналася до команди однодумців SovaKlinik, Neuroflex та Lama Lu в м. Києві, які дотримуються доказової медицини.</p>
           <p>
+          <p>З кінця 2022 року працюю в чудовій команді Коло сім'ї.</p>
           Дотримуюсь думки, що немає поганих батьків чи дітей, є ті, хто потребують допомоги та підтримки. 
           </p>
       </div>
       
       <div className='buttons'>
           <ul>
-            <li><a href="mailto:dr.oksana.ved@gmail.com">Написати на електронну адресу</a></li>
-            <li><a href="tel:+380689110301">Запис на онлайн консультацію в SovaKlinik</a></li>
-            <li><a href="tel:+380967095818">Запис на онлайн консультацію в Лама Лу</a></li>
-            <li><a href="tg://resolve?domain=Ved_Oksana">Або напишіть в мій Телеграм</a></li>
+            <li><a href="tel:+380951555822">Запис на консультацію через адміністратора</a></li>
           </ul>
       </div>
       
